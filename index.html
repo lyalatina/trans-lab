@@ -24,18 +24,24 @@
        <img src="docs/imagen.png" id="logo" alt="logo de TransLab">
        <h1>TRANS-LAB</h1>
       <!-- aqui login -->
-      <form>
-          <div class="form-group">
+      <div class="tab">
+          <form id="regForm" action="">
+              <div class="tab">
             <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
+            <p><input type="email" class="form-control"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico"></p>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1"></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" id="number-one" maxlength="8" onkeypress="return isNumberKey(event)" value="" placeholder="Contraseña">
+            <p><input type="password" class="form-control"  id="exampleInputPassword1" id="number-one" maxlength="8"  onkeypress="return isNumberKey(event)" value="" placeholder="Contraseña"></p>
+            <div id="alertPass"> 
+              
+            </div>
             
           </div>
           <a href="home.html">
-          <button type="submit" onclick="newDoc()" class="btn">Iniciar Sesión</button>
+          <button type="button"  class="btnIniciar" onclick="nextBtn(1)">Iniciar Sesión</button>
+              </div>
+            </div>
         </a>
 
         </form>
